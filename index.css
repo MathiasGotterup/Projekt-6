@@ -1,0 +1,26 @@
+.menu {
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.menu2{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  color: #626469;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  padding: 0px;
+}
+
+.links{
+  color: #626469;
+}
+.links:hover{
+  color: #3DCD58;
+}
