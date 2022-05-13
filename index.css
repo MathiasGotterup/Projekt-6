@@ -8,6 +8,7 @@ align-items: center;
   list-style: none;
   justify-content: space-around;
   color: #626469;
+  gap: 15px;
 }
 
 a{
@@ -23,4 +24,19 @@ ul{
 }
 .links:hover{
   color: #3DCD58;
+}
+
+.linksside{
+  color: #3DCD58;
+}
+
+#logo{
+  z-index: 100;
+  position: absolute;
+  top: 12pt;
+  right: 24pt;
+}
+
+#logobilled{
+max-width: 100px;
 }
