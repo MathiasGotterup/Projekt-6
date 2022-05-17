@@ -41,6 +41,16 @@ ul{
 max-width: 100px;
 }
 
+.slideshow-container {
+  max-width: 1000px;
+  height: 800px;
+  position: relative;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .infog{
   width: 100%;
   max-width: 800px;
@@ -50,15 +60,10 @@ max-width: 100px;
   margin-right: auto;
 }
 
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
 .slideshow{
   display: none;
 }
+
 
 .forrige, .næste {
   cursor: pointer;
@@ -78,5 +83,9 @@ max-width: 100px;
 .næste {
   right: 0;
   border-radius: 3px 0 0 3px;
+}
+
+.forrige{
+  left: 0;
 }
 
