@@ -43,7 +43,7 @@ max-width: 100px;
 
 .slideshow-container {
   max-width: 1000px;
-  height: 800px;
+  height: 700px;
   position: relative;
   margin: auto;
   display: flex;
@@ -53,7 +53,7 @@ max-width: 100px;
 
 .infog{
   width: 100%;
-  max-width: 800px;
+  max-width: 700px;
   margin-top: 60px;
   display: block;
   margin-left: auto;
