@@ -59,18 +59,72 @@ h2 {
   padding: 30px;
 }
 
-.item1 {
+.item {
   grid-column: 1 / span 2;
+  font-family: 'Nunito';
 }
-.item2 {
-  grid-column: 1 / span 2;
+
+input {
+  float: right;
 }
-.item3 {
-  grid-column: 1 / span 2;
+
+#btn {
+  cursor: pointer;
+  float: right;
+  background-color: #3DCD58;
+  color: white;
+  border: 1px solid #626469;
+  padding: 10px;
 }
-.item4 {
-  grid-column: 1 / span 2;
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /*gøres usynlig*/
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200 ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 0px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
 }
-.item5 {
-  grid-column: 1 / span 2;
+
+.popup.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+
+.luk {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  float: right;
+}
+
+.popuptekst {
+  padding: 10px 15px;
+}
+
+#overlay {
+  position: fixed;
+  transition: 200 ms ease-in-out;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  /*så indsend knap kan trykeks på når popup ik er aktiv*/
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
 }
