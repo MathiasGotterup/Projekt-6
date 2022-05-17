@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <title>Nyttig Viden</title>
     <link rel="stylesheet" href="index.css">
+    <script src="javascript/trine.js" defer></script>
   </head>
   <body>
-    <div class="container">
+    
+    <header>
 
       <div class="header">
       <nav class="menu">
@@ -19,18 +21,46 @@
       </nav>
       </div>
       <div id="logo"><img src="billeder/logo.png" alt="Schnider Electrics og Wiser logo" id="logobilled"></div>
+</header>
 
-      <main>
+<main>
+  <div class="slideshow-container">
+      <div class="slideshow">
+        <img class="infog" src="billeder/infog1.jpg" alt="klimaaftryk"/>
+      </div>
 
       <div class="slideshow">
-        <img class="infog1" src="billeder/infog1.jpg" alt="klimaaftryk"/>
+        <img class="infog" src="billeder/infog2.jpg" alt="smarthome"/>
       </div>
 
-      </main>
-
-      <div class="footer">
+      <div class="slideshow">
+        <img class="infog" src="billeder/infog3.jpg" alt="co2udledning"/>
       </div>
 
-    </div>
+      <div class="slideshow">
+        <img class="infog" src="billeder/infog4.jpg" alt="energikilde"/>
+      </div>
+
+      <div class="slideshow">
+        <img class="infog" src="billeder/infog5.jpg" alt="elforbrug"/>
+      </div>
+
+      <div class="slideshow">
+        <img class="infog" src="billeder/infog6.jpg" alt="kraftværker"/>
+      </div>
+
+      <div class="slideshow">
+        <img class="infog" src="billeder/infog7.jpg" alt="grønomstilling"/>
+      </div>
+
+      <a class="forrige" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="næste" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+</main>
+
+      <footer>
+
+      </footer>
+
   </body>
 </html>

@@ -41,7 +41,7 @@ ul{
 max-width: 100px;
 }
 
-.infog1{
+.infog{
   width: 100%;
   max-width: 800px;
   margin-top: 60px;
@@ -49,3 +49,34 @@ max-width: 100px;
   margin-left: auto;
   margin-right: auto;
 }
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slideshow{
+  display: none;
+}
+
+.forrige, .næste {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.næste {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
