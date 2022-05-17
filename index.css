@@ -45,6 +45,8 @@ h2 {
   text-align: center;
   font-family: 'Nunito';
 }
+
+/*tjekliste*/
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
@@ -75,8 +77,10 @@ input {
   color: white;
   border: 1px solid #626469;
   padding: 10px;
+  margin-top: 15px;
 }
 
+/*popup resultat*/
 .popup {
   position: fixed;
   top: 50%;
@@ -102,13 +106,14 @@ input {
   border: none;
   outline: none;
   background: none;
-  font-size: 1.25rem;
+  font-size: 1.85rem;
   font-weight: bold;
   float: right;
 }
 
 .popuptekst {
   padding: 10px 15px;
+  font-family: 'Nunito';
 }
 
 #overlay {
