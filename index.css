@@ -1,3 +1,7 @@
+#header {
+  display: block;
+}
+
 .menu {
 display: flex;
 justify-content: space-around;
@@ -39,4 +43,33 @@ ul{
 
 #logobilled{
 max-width: 100px;
+}
+
+#hamburger{
+    z-index: 100;
+    position: absolute;
+    top: 5pt;
+    left: 8pt;
+}
+#hamburgerbilled{
+max-width: 50px;
+}
+
+#mobil {
+  display:none;
+}
+
+.menumobil{
+  text-align: center;
+  margin-top: 130px;
+  display: flex;
+  gap: 30px;
+  background-color: #9fa0a4;
+  flex-flow: column;
+  font-size: 30px;
+  padding: 40px;
+}
+
+#mobilmenu {
+  display: none;
 }
