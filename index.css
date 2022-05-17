@@ -40,3 +40,12 @@ ul{
 #logobilled{
 max-width: 100px;
 }
+
+.infog1{
+  width: 100%;
+  max-width: 800px;
+  margin-top: 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
