@@ -45,4 +45,4 @@ for(var checkbox of checkboxes) {
             valueList.innerHTML = text + '20-25%';
         }
     })
-}
+};
