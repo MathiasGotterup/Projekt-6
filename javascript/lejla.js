@@ -27,3 +27,4 @@ function closePopup(popup) {
     popup.classList.remove('active')
     overlay.classList.remove('active')
 };
+

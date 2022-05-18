@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Nyttig Viden</title>
     <link rel="stylesheet" href="index.css">
+    <script src="javascript/lejla.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -20,11 +21,28 @@
       </div>
       <div id="logo"><img src="billeder/logo.png" alt="Schnider Electrics og Wiser logo" id="logobilled"></div>
 
-      <div class="main">
-      </div>
+      <main>
+        <h2>Vand Besparelse</h2>
+        <div class="grid-container">
+          <div class="item">Husker du at holde øje med om dit toilet står og løber? <input type="checkbox"></div>
+          <div class="item">Husker du at tjekke, om du har lukket vandhanen og bruseren? <input type="checkbox"></div>
+          <div class="item"> <input type="checkbox"></div>  
+          <div class="item"> <input type="checkbox"></div>
+          <div class="item"> <input type="checkbox"></div>
+        </div>
+        <button id="btn" type="button" data-popup-target="#popup">Indsend</button>
 
-      <div class="footer">
-      </div>
+        <div class="popup" id="popup">
+            <button data-luk-button class="luk">&times;</button>
+          <div class="popuptekst">
+            tekst her
+          </div>
+        </div>
+        <div id="overlay"></div>
+      </main>
+
+      <footer>
+      </footer>
 
     </div>
   </body>
