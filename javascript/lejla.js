@@ -38,7 +38,7 @@ for(var checkbox of checkboxes) {
     checkbox.addEventListener('click', function(){
         if(this.checked == true) {
             listArray.push(this.value);
-            valueList.innerHTML = text + listArray.join('');
+            valueList.innerHTML = text + listArray.shift() + listArray.join('');
         }
         else {
             listArray = listArray.filter(e => e !== this.value);
