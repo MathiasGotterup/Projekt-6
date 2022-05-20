@@ -2,14 +2,15 @@
 <html lang=dk dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Nyttig Viden</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forbrug udregner Varme</title>
     <link rel="stylesheet" href="index.css">
     <script src="javascript/lejla.js" defer></script>
   </head>
   <body>
     <div class="container">
 
-      <div class="header">
+      <header>
       <nav class="menu">
         <ul class="menu2">
         <div> <a class="links" href="index.html"> Nyttig viden </a></div>
@@ -18,25 +19,24 @@
         <div> <a class="linksside" href="varme-spar.html"> Varme Besparelse </a></div>
         </ul>
       </nav>
-      </div>
+    </header>
       <div id="logo"> <img src="billeder/logo.png" alt="Schnider Electrics og Wiser logo" id="logobilled"></div>
 
       <main>
         <h2>Varme Besparelse</h2>
         <div class="grid-container">
-          <div class="item">Husker du at slukke for varmen i din bolig når du er væk i flere dage? <input type="checkbox"></div>
-          <div class="item">Husker du at skrue ned for varmen i de rum, som du ikke anvender så hyppigt?  <input type="checkbox"></div>
-          <div class="item">Husker du at sænke varmen i løbet af dagen, så du kun forbruger efter dit behov? <input type="checkbox"></div>  
-          <div class="item">Husker du at slukke for varmen når du har åbne døre og/eller vinduer? <input type="checkbox"></div>
-          <div class="item">Husker du at lukke dine vinduer når du forlader din bolig? <input type="checkbox"></div>
+          <div class="item">Husker du at slukke for varmen i din bolig når du er væk i flere dage? <input type="checkbox" class="checkbox" value="20-25%" id="et"></div>
+          <div class="item">Husker du at skrue ned for varmen i de rum, som du ikke anvender så hyppigt?  <input type="checkbox" class="checkbox" value="20-25%" id="to"></div>
+          <div class="item">Husker du at sænke varmen i løbet af dagen, så du kun forbruger efter dit behov? <input type="checkbox" class="checkbox" value="20-25%" id="tre"></div>  
+          <div class="item">Husker du at slukke for varmen når du har åbne døre og/eller vinduer? <input type="checkbox" class="checkbox" value="20-25%" id="fire"></div>
+          <div class="item">Husker du at lukke dine vinduer når du forlader din bolig? <input type="checkbox" class="checkbox" value="20-25%" id="fem"></div>
         </div>
         <button id="btn" type="button" data-popup-target="#popup">Indsend</button>
 
-        <div class="popup" id="popup">
-            <button data-luk-button class="luk">&times;</button>
-          <div class="popuptekst">
-            tekst her
-          </div>
+        <div class="popup print-values" id="popup">
+          <button data-luk-button class="luk">&times;</button>
+        <div class="popuptekst" id="valueList">
+        </div>
         </div>
         <div id="overlay"></div>
       </main>
