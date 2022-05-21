@@ -221,11 +221,16 @@ code {
   justify-content: space-around;
 }
 
-.beskrivelse_burgermenu{
-  padding: 10px;
-}
-
 #burgermenu_nav{
+  border: 2px solid black;
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 250px;
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+}
+#knapper_seopslag{
   border: 2px solid black;
   margin-left: 20%;
   margin-right: 20%;
