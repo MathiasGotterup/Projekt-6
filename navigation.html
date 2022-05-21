@@ -37,7 +37,7 @@ CSS
       </div>
    <br>
       <div id="burgermenu_nav">
-        <p class="beskrivelse_burgermenu"> Se lektier er et hyperlink til Itslearning hvor man kan<br>se ens lektier. Dette er også stylet i CSS </p>
+        <p class="beskrivelse_burgermenu"> Burgermenuen bruges på mobilversion for at gøre det mere overskueligt for brugeren <br> Burgermenuen er lavet gennem HTML, CSS og Javascript </p>
         <div class="kode_burgermenu"> <pre><code style="overflow: scroll auto;">
     HTML
           &lt;div class="menu-toggle" id="toggle"&gt;
@@ -101,7 +101,36 @@ CSS
   left: 50%;
   transform: translate(-50%,-50%) rotate(-45deg);
 }
+
 JAVASCRIPT
 
+let menuTog = document.querySelector('.menu-toggle');
+let nav = document.querySelector('.nav');
+let navVenstre = document.querySelector('.nav-venstre');
+let navRight = document.querySelector('.nav-right');
+let navLinks = Array.from(document.querySelectorAll('.nav-link'));
+
+menuTog.addEventListener('click', () => {
+  menuTog.classList.toggle('active');
+  navRight.classList.toggle('active');
+  navVenstre.classList.toggle('active');
+  nav.classList.toggle('active');
+
+
+    navRight.classList.remove('active');
+
+    if(menuTog.classList.contains('active')){
+      setTimeout(()=>{
+        navRight.classList.add('active');
+      },100)
+
+      for(let i = 0; i < navLinks.length; i++){
+        navLinks[i].classList.remove('active');
+        setTimeout(()=>{
+          navLinks[i].classList.add('active')
+        }, i * 100)
+      }
+    }
+})
          </code></pre></div>
       </div>
