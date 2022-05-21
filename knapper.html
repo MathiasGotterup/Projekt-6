@@ -36,18 +36,24 @@
       </div>
 
       <div id="btn_indsend">
-        <button id="btn" type="button" data-popup-target="#popup">Indsend</button>
-           <p class="beskrivelse_indsend"> Indsend knappen bruges til at brugeren kan se deres besparelser <br> Derudover er knappen blivet stylet gennem CSS <br></p>
+        <a class="forrige" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="næste" onclick="plusSlides(1)">&#10095;</a>
+           <p class="beskrivelse_inds"> Pilene er med til at brugeren kan se de andre billeder på slideshowet <br> Derudover er knapperne blivet stylet gennem HTML og CSS <br></p>
            <div class="kode_indsend"> <pre><code style = "overflow: scroll auto;">
-             #btn {
-               cursor: pointer;
-               float: right;
-               background-color: #3DCD58;
-               color: white;
-               border: 1px solid #626469;
-               padding: 10px;
-               margin-top: 15px;
+HTML
+              &lt;a class="forrige" onclick="plusSlides(-1)"&gt;&lt;/a&gt;
+              &lt;a class="næste" onclick="plusSlides(1)"&gt;&lt;/a&gt;
+
+CSS
+             .næste {
+               right: 0;
+               border-radius: 3px 0 0 3px;
              }
+
+             .forrige{
+               left: 0;
+             }
+
             </code></pre></div>
          </div>
 </body>
