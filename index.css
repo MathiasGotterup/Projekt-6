@@ -231,12 +231,23 @@ code {
   justify-content: space-around;
 }
 
+#btn_indsend{
+  border: 2px solid black;
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 250px;
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+
 #btn {
   cursor: pointer;
-  float: right;
   background-color: #3DCD58;
   color: white;
   border: 1px solid #626469;
   padding: 10px;
   margin-top: 15px;
+  height: 40px;
 }
