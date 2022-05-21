@@ -15,13 +15,12 @@
     <div id="sideNav" class="sidenav">
      <a href="typografi.html" id="typografi">Typografi</a>
      <a href="knapper.html" id="knapper">Knapper</a>
-     <a href="formular.html" id="formular">Formular</a>
      <a href="farver.html" id="farver">Farver</a>
      <a href="ikoner.html" id="ikoner">Ikoner</a>
      <a href="navigation.html" id="navigation">Navigation</a>
    </div>
    <div id="stornav">
-        <p class="beskrivelse_stornav"> Se opslag bliver brugt til at brugeren kan udvide beskeden<br> Derudover er knappen blivet stylet gennem CSS <br></p>
+        <p class="beskrivelse_stornav"> Navigations baren er lavet for at give brugeren et overblik over hvilke sider der er <br> Navigations baren er stylet gennem HTML og CSS <br></p>
         <div class="kode_stornav"> <pre><code style = "overflow: scroll auto;">
 HTML
           &lt;div class="header" id="menuheader">
@@ -32,7 +31,14 @@ HTML
               &lt;li class="headerlink"&gt; &lt;a class="menupunkt" href="varme-spar.html"&gt; Varme Besparelse &lt;/a>&lt;/li&gt;
             &lt;/ul&gt;
 CSS
-
+          .headermenu{
+            margin-top: 5%;
+            margin-left: 20%;
+            margin-right: 20%;
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+          }
          </code></pre></div>
       </div>
    <br>

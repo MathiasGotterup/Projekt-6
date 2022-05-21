@@ -65,16 +65,12 @@ top: 100px;
 top: 180px;
 }
 
-#formular {
+#ikoner {
 top: 260px;
 }
 
-#ikoner {
-top: 340px;
-}
-
 #navigation {
-top: 420px;
+top: 340px;
 }
 
 .header_container{
@@ -221,14 +217,12 @@ code {
   margin-right: 20%;
   height: 250px;
   width: auto;
+  display: flex;
+  justify-content: space-around;
 }
 
 .beskrivelse_burgermenu{
   padding: 10px;
-}
-
-.kode_burgermenu{
-
 }
 
 #burgermenu_nav{
@@ -237,11 +231,6 @@ code {
   margin-right: 20%;
   height: 250px;
   width: auto;
-}
-
-
-.kode_stornav{
-  margin-left: 45%;
-margin-top: -13%;
-width: 250px
+  display: flex;
+  justify-content: space-around;
 }
