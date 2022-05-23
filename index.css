@@ -228,7 +228,8 @@ h2 {
   padding: 2px;
   font-size: 15px;
   margin-top: 20px;
-  max-width: 98%;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .grid-container > div {
@@ -254,6 +255,7 @@ input {
   border: 1px solid #626469;
   padding: 10px;
   margin-top: 15px;
+  margin-right: 50px;
 }
 
 /*popup resultat*/
