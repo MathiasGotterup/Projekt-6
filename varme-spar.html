@@ -38,8 +38,23 @@
   </div>
       <div class="nav-right"></div>
 </nav>
+<main>
+  <h2>Varme Besparelse</h2>
+  <div class="grid-container">
+    <div class="item">Husker du at slukke for varmen i din bolig når du er væk i flere dage? <input type="checkbox" class="checkbox" value="20-25%" id="et"></div>
+    <div class="item">Husker du at skrue ned for varmen i de rum, som du ikke anvender så hyppigt?  <input type="checkbox" class="checkbox" value="20-25%" id="to"></div>
+    <div class="item">Husker du at sænke varmen i løbet af dagen, så du kun forbruger efter dit behov? <input type="checkbox" class="checkbox" value="20-25%" id="tre"></div>
+    <div class="item">Husker du at slukke for varmen når du har åbne døre og/eller vinduer? <input type="checkbox" class="checkbox" value="20-25%" id="fire"></div>
+    <div class="item">Husker du at lukke dine vinduer når du forlader din bolig? <input type="checkbox" class="checkbox" value="20-25%" id="fem"></div>
+  </div>
+  <button id="btn" type="button" data-popup-target="#popup">Indsend</button>
 
-
-<script src="javascript/anton.js" charset="utf-8"></script>
+  <div class="popup print-values" id="popup">
+    <button data-luk-button class="luk">&times;</button>
+  <div class="popuptekst" id="valueList">
+  </div>
+  </div>
+  <div id="overlay"></div>
+</main>
   </body>
 </html>
