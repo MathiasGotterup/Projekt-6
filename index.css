@@ -88,7 +88,7 @@ input {
   left: 50%;
   /*gøres usynlig*/
   transform: translate(-50%, -50%) scale(0);
-  transition: 200 ms ease-in-out;
+  transition: 200ms ease-in-out;
   border: 1px solid black;
   border-radius: 0px;
   z-index: 10;
@@ -119,7 +119,7 @@ input {
 
 #overlay {
   position: fixed;
-  transition: 200 ms ease-in-out;
+  transition: 200ms ease-in-out;
   opacity: 0;
   top: 0;
   left: 0;
