@@ -65,6 +65,13 @@ body{
   transform: translate(-50%,-50%) rotate(-45deg);
 }
 
+#logoeffekt{
+  z-index: 100;
+  position: absolute;
+  top: 12pt;
+  right: 24pt;
+  max-width: 100px;
+}
 /* nav links */
 nav{
   position: fixed;

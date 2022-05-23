@@ -9,7 +9,7 @@
     <script src="javascript/anton.js" defer></script>
   </head>
   <body>
-    <img class="logo" src="billeder/logo.png" alt="Wiser logo">
+    <img class="logo" src="billeder/logo.png" alt="Wiser logo" id="logoeffekt">
     <div class="header" id="menuheader">
       <ul class="headermenu">
         <li class="headerlink"><a class="menupunkt" href="index.html"> Nyttig Viden </a></li>
@@ -38,7 +38,24 @@
   </div>
       <div class="nav-right"></div>
 </nav>
+<main>
+  <h2>Vand Besparelse</h2>
+  <div class="grid-container">
+    <div class="item">Husker du at holde øje med om dit toilet står og løber? <input type="checkbox" class="checkbox" value="20-25%" id="et"></div>
+    <div class="item">Husker du at tjekke, om du har lukket vandhanen og bruseren? <input type="checkbox" class="checkbox" value="20-25%" id="to"></div>
+    <div class="item"> <input type="checkbox" class="checkbox" value="20-25%" id="tre"></div>
+    <div class="item"> <input type="checkbox" class="checkbox" value="20-25%" id="fire"></div>
+    <div class="item"> <input type="checkbox" class="checkbox" value="20-25%" id="fem"></div>
+  </div>
+  <button id="btn" type="button" data-popup-target="#popup">Indsend</button>
 
+  <div class="popup print-values" id="popup">
+      <button data-luk-button class="luk">&times;</button>
+    <div class="popuptekst" id="valueList">
+    </div>
+  </div>
+  <div id="overlay"></div>
+</main>
 
 
   </body>
