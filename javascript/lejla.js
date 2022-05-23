@@ -6,13 +6,13 @@ let overlay = document.getElementById('overlay');
 openPopupButtons.forEach(button => {
     button.addEventListener('click', () => {
         if (listArray.length == 0) {
-            popuptext = "Du kan spare 20-25% hvis..";
+            popuptext = "Du kan spare 20-25% på dit forbrug ved at installere Wiser Smart Home.";
         } else if (listArray.length == 1) {
-            popuptext = "Du kan spare 20-25% hvis..";
+            popuptext = "Du kan spare 20-25% på dit forbrug ved at installere Wiser Smart Home.";
         } else if (listArray.length == 2,3,4) {
-            popuptext = "Du kan spare 10-20% hvis..";
+            popuptext = "Du kan spare 10-20% på dit forbrug ved at installere Wiser Smart Home.";
         } else if (listArray.length == 5) {
-            popuptext = "Du kan spare 5-10% hvis..";
+            popuptext = "Du kan spare 5-10% på dit forbrug ved at installere Wiser Smart Home.";
         }
         document.getElementById('valueList').innerHTML = popuptext;
         const popup = document.querySelector(button.dataset.popupTarget);
