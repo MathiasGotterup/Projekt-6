@@ -200,7 +200,96 @@ ul{
   border-radius: 3px 0 0 3px;
 }
 
-.forrige{
-  left: 0;
+h2 {
+  text-align: center;
+  font-family: 'Nunito';
 }
 
+/*tjekliste*/
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 2px;
+  background-color: #000000;
+  padding: 2px;
+  font-size: 15px;
+}
+
+.grid-container > div {
+  background-color: #FFFFFF;
+  padding: 30px;
+}
+
+/*checkboxe*/
+.item {
+  grid-column: 1 / span 2;
+  font-family: 'Nunito';
+}
+
+input {
+  float: right;
+}
+
+#btn {
+  cursor: pointer;
+  float: right;
+  background-color: #3DCD58;
+  color: white;
+  border: 1px solid #626469;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+/*popup resultat*/
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /*gøres usynlig*/
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 0px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+}
+
+.popup.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+
+.luk {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.85rem;
+  font-weight: bold;
+  float: right;
+}
+
+.popuptekst {
+  padding: 10px 15px;
+  font-family: 'Nunito';
+}
+
+#overlay {
+  position: fixed;
+  transition: 200ms ease-in-out;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  /*så indsend knap kan trykeks på når popup ik er aktiv*/
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
