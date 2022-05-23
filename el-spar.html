@@ -38,8 +38,24 @@
   </div>
       <div class="nav-right"></div>
 </nav>
+<main>
+  <h2>El Besparelse</h2>
+  <div class="grid-container">
+    <div class="item">Bruger i el-spareskinne? <input type="checkbox" class="checkbox" value="20-25%" id="et"></div>
+    <div class="item">Bruger du LED pærer og/eller sparepærer? <input type="checkbox" class="checkbox" value="10-20%" id="to"></div>
+    <div class="item">Slukker du for lys i rum du ikke opholder dig i? <input type="checkbox" class="checkbox" value="10-20%" id="tre"></div>
+    <div class="item">Husker du at slukke for apparater som står standby? <input type="checkbox" class="checkbox" value="10-20%" id="fire"></div>
+    <div class="item">Har du stadig gamle el apparater, som du bruger hyppigt? <input type="checkbox" class="checkbox" value="5-10%" id="fem"></div>
+  </div>
+  <button id="btn" type="button" data-popup-target="#popup">Indsend</button>
 
+  <div class="popup print-values" id="popup">
+      <button data-luk-button class="luk">&times;</button>
+    <div class="popuptekst" id="valueList">
+    </div>
+  </div>
+  <div id="overlay"></div>
 
-<script src="javascript/anton.js" charset="utf-8"></script>
+</main>
   </body>
 </html>
