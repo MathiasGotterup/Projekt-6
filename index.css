@@ -66,13 +66,8 @@ body{
   transform: translate(-50%,-50%) rotate(-45deg);
 }
 
-#logoeffekt{
-  z-index: 100;
-  position: absolute;
-  top: 12pt;
-  max-width: 100px;
-  right: 5%;
-}
+
+
 /* nav links */
 nav{
   position: fixed;
@@ -244,13 +239,12 @@ input {
 
 #btn {
   cursor: pointer;
-  float: right;
   background-color: #3DCD58;
   color: white;
   border: 1px solid #626469;
   padding: 10px;
   margin-top: 15px;
-  margin-right: 50px;
+  margin-left: 92.5%;
 }
 
 /*popup resultat*/
@@ -324,13 +318,17 @@ h4{
   margin: 5px;
 }
 
+.logo{
+  max-width: 60px;
+}
+
 @media only screen and (max-width: 600px){
   .grid-container{
     margin-top: 90px;
   }
 
   .logo{
-    max-height: 70px;
+    max-height: 50px;
   }
   .slideshow-container {
     height: 300px;
@@ -345,27 +343,13 @@ h4{
     font-size: 30px;
     right: 0;
   }
+  #btn {
+  cursor: pointer;
+  background-color: #3DCD58;
+  color: white;
+  border: 1px solid #626469;
+  padding: 10px;
+  margin-top: 15px;
+  margin-left: 70%;
 }
-
-@media only screen and (max-width: 999px){
-  .grid-container{
-    margin-top: 90px;
-  }
-
-  .logo{
-    max-height: 70px;
-  }
-  .slideshow-container {
-    height: 600px;
-    max-width: 90%;
-  }
-
-  .forrige{
-    font-size: 30px;
-    left: 0;
-  }
-  .næste{
-    font-size: 30px;
-    right: 0;
-  }
 }
