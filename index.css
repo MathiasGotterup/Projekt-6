@@ -314,9 +314,8 @@ h4{
 
 .footer{
   display: flex;
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
+  float: right;
+  padding: 10px;
   gap: 15px;
 }
 
