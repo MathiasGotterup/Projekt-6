@@ -206,7 +206,7 @@ h2 {
   font-family: 'Nunito';
   padding-top: 29px;
   margin-left: 100px;
-  margin-right: 100px;
+  margin-right: 80px;
 }
 
 /*tjekliste*/
@@ -303,7 +303,6 @@ input {
 
 h4{
   font-size: 100%;
-  padding-top: 25px;
 }
 
 .footer{
@@ -311,6 +310,7 @@ h4{
   float: right;
   padding: 10px;
   gap: 15px;
+  margin-top: 25px;
 }
 
 .footerbilled{
