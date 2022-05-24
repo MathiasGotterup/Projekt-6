@@ -312,6 +312,24 @@ input {
   pointer-events: all;
 }
 
+h4{
+  font-size: 100%;
+  padding-top: 25px;
+}
+
+.footer{
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  gap: 30px;
+}
+
+.footerbilled{
+  max-height: 50px;
+}
+
+
 @media only screen and (max-width: 1040px){
   .grid-container{
     margin-top: 90px;
