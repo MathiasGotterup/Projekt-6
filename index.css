@@ -87,7 +87,7 @@ nav{
   top: 0;
   width: 50%;
   height: 100vh;
-  background-color: #9FA0A4;
+  background-color: #009530;
   transition: 0.8s;
 }
 
@@ -114,7 +114,7 @@ nav{
   top: 0;
   width: 50%;
   height: 100vh;
-  background-color: #009530;
+  background-color: #FFFFFF;
   transition: 0.8s;
 }
 
@@ -204,7 +204,7 @@ ul{
 h2 {
   text-align: center;
   font-family: 'Nunito';
-  padding-top: 29px;
+  padding-top: 10px;
   margin-left: 100px;
   margin-right: 80px;
 }
@@ -244,7 +244,7 @@ input {
   border: 1px solid #626469;
   padding: 10px;
   margin-top: 15px;
-  margin-left: 92.5%;
+  margin-left: 83.5%;
 }
 
 /*popup resultat*/
@@ -310,7 +310,7 @@ h4{
   float: right;
   padding: 10px;
   gap: 15px;
-  margin-top: 25px;
+  margin-top: 40px;
 }
 
 .footerbilled{
@@ -322,11 +322,8 @@ h4{
   max-width: 60px;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1000px){
 
-  .footer{
-      margin-top: 70px;
-  }
   .grid-container{
     margin-top: 90px;
   }
