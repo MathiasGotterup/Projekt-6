@@ -5,8 +5,6 @@ function GetSelected() {
     //Reference the Table.
     var tblFruits = document.getElementById("knapperalle");
 
-    document.getElementById('knapperalle').style.textAlign = 'center';
-
     //Reference all the CheckBoxes in Table.
     var chks = tblFruits.getElementsByTagName("INPUT");
 
@@ -18,7 +16,7 @@ function GetSelected() {
     }
     //Display the selected CheckBox values.
     if (selected.length > 0) {
-        alert("Selected values: " + selected.join(","));
+        alert("Du forstod: " + selected.join(","));
     }
     else {
       return false;
