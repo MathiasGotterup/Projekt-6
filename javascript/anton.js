@@ -1,3 +1,4 @@
+// Vis eller skjul burgermenu i forhold til brugers vindue størrelse
 window.onload = function() {
   if (window.matchMedia("(min-width: 1000px)").matches) {
     document.getElementById('toggle').style.display = "none";
@@ -18,7 +19,7 @@ window.addEventListener("resize", function() {
     document.getElementById('menuheader').style.display = "none";
   }})
 
-
+// Selve burgermenu koden starter under her
 let menuTog = document.querySelector('.menu-toggle');
 let nav = document.querySelector('.nav');
 let navVenstre = document.querySelector('.nav-venstre');
